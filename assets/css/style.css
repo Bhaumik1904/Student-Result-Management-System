@@ -572,8 +572,9 @@ textarea.form-control { resize: vertical; min-height: 90px; }
    RESULT CARD — Print-ready
    ===================================================== */
 .result-card-wrap {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  overflow-x: auto;
 }
 
 .result-card {
@@ -627,14 +628,14 @@ textarea.form-control { resize: vertical; min-height: 90px; }
 
 .student-info-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
 .info-field-label { font-size: .7rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
-.info-field-value { font-size: .9rem; font-weight: 600; color: var(--text-primary); }
+.info-field-value { font-size: .9rem; font-weight: 600; color: var(--text-primary); word-break: break-word; }
 
-.result-card-marks { padding: 28px 40px; }
+.result-card-marks { padding: 28px 40px; overflow-x: auto; }
 
 .marks-table th, .marks-table td { font-size: .85rem; }
 
@@ -646,7 +647,7 @@ textarea.form-control { resize: vertical; min-height: 90px; }
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
