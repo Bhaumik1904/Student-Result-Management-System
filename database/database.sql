@@ -7,6 +7,7 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- Create and use database
 CREATE DATABASE IF NOT EXISTS `student_result_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -71,11 +72,27 @@ CREATE TABLE `subjects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `subjects` (`subject_code`, `subject_name`, `max_marks`) VALUES
-('SUB101', 'Mathematics', 100),
-('SUB102', 'Programming', 100),
-('SUB103', 'DBMS', 100),
-('SUB104', 'Java', 100),
-('SUB105', 'Web Technologies', 100);
+('MAT101', 'Engineering Mathematics', 100),
+('CSE101', 'Data Structures', 100),
+('CSE102', 'Java Programming', 100),
+('CSE103', 'Database Systems', 100),
+('CSE104', 'Web Technologies', 100),
+('ECE101', 'Digital Electronics', 100),
+('ECE102', 'Signals & Systems', 100),
+('ECE103', 'Microprocessors', 100),
+('ECE104', 'Communication Systems', 100),
+('EEE101', 'Circuit Theory', 100),
+('EEE102', 'Power Systems', 100),
+('EEE103', 'Control Systems', 100),
+('EEE104', 'Electrical Machines', 100),
+('CIV101', 'Structural Analysis', 100),
+('CIV102', 'Fluid Mechanics', 100),
+('CIV103', 'Surveying', 100),
+('CIV104', 'Geotechnical Engineering', 100),
+('MEC101', 'Thermodynamics', 100),
+('MEC102', 'Kinematics', 100),
+('MEC103', 'Machine Design', 100),
+('MEC104', 'Manufacturing Processes', 100);
 
 -- =====================================================
 -- TABLE: marks
@@ -96,15 +113,24 @@ CREATE TABLE `marks` (
   CONSTRAINT `fk_marks_subject` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Sample marks (student IDs 1–8, subject IDs 1–5)
+-- Sample marks (branch specific)
 INSERT INTO `marks` (`student_id`, `subject_id`, `marks_obtained`) VALUES
-(1,1,92),(1,2,88),(1,3,95),(1,4,91),(1,5,87),
-(2,1,78),(2,2,82),(2,3,74),(2,4,79),(2,5,85),
-(3,1,65),(3,2,70),(3,3,68),(3,4,72),(3,5,66),
-(4,1,88),(4,2,91),(4,3,85),(4,4,90),(4,5,93),
-(5,1,45),(5,2,52),(5,3,38),(5,4,48),(5,5,50),
-(6,1,30),(6,2,42),(6,3,28),(6,4,35),(6,5,33),
-(7,1,55),(7,2,60),(7,3,58),(7,4,62),(7,5,57),
-(8,1,72),(8,2,68),(8,3,75),(8,4,71),(8,5,69);
+-- CSE Students (IDs 1, 2, 8) -> Subjects: 1, 2, 3, 4, 5
+(1,1,92), (1,2,88), (1,3,95), (1,4,91), (1,5,87),
+(2,1,78), (2,2,82), (2,3,74), (2,4,79), (2,5,85),
+(8,1,72), (8,2,68), (8,3,75), (8,4,71), (8,5,69),
+
+-- ECE Students (IDs 3, 4) -> Subjects: 1, 6, 7, 8, 9
+(3,1,65), (3,6,70), (3,7,68), (3,8,72), (3,9,66),
+(4,1,88), (4,6,91), (4,7,85), (4,8,90), (4,9,93),
+
+-- EEE Student (ID 5) -> Subjects: 1, 10, 11, 12, 13
+(5,1,45), (5,10,52), (5,11,38), (5,12,48), (5,13,50),
+
+-- Civil Student (ID 6) -> Subjects: 1, 14, 15, 16, 17
+(6,1,30), (6,14,42), (6,15,28), (6,16,35), (6,17,33),
+
+-- Mechanical Student (ID 7) -> Subjects: 1, 18, 19, 20, 21
+(7,1,55), (7,18,60), (7,19,58), (7,20,62), (7,21,57);
 
 COMMIT;
