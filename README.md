@@ -263,18 +263,24 @@ marks      → id, student_id, subject_id, marks_obtained, created_at, updated_a
 
 ## Screenshots
 
-> *(Screenshots will be added after deployment)*
+<div align="center">
 
-| Page | Description |
-|---|---|
-| Login | Clean Apple-inspired authentication |
-| Dashboard | Executive overview with charts |
-| Students | DataTables list with CRUD |
-| Marks Entry | Select2 dropdowns + validation |
-| Result Card | Premium academic transcript |
-| Result Search | AJAX-powered instant search |
+### 1. Secure Admin Login
+![Login Page](assets/screenshots/login.png)
 
----
+### 2. Executive Dashboard & Analytics
+![Dashboard](assets/screenshots/dashboard.png)
+
+### 3. Student Management List
+![Students List](assets/screenshots/students_list.png)
+
+### 4. Add Student Form
+![Add Student](assets/screenshots/add_student.png)
+
+### 5. Branch-Specific Subjects Management
+![Subjects List](assets/screenshots/subjects_list.png)
+
+</div>
 
 ## API Endpoints (Internal AJAX)
 
