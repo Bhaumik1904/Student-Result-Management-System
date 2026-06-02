@@ -126,8 +126,10 @@ if (!isset($s, $sum, $statusClass, $gradeClass, $result)) {
     <div>Pass Mark Per Subject: 35 &mdash; This is a computer-generated document.</div>
   </div>
 </div>
+<?php if (empty($hideFullResultButton)): ?>
 <div class="d-flex gap-12 mt-20" style="justify-content:center;">
   <a href="../results/result-card.php?id=<?= $s['id'] ?>" class="btn btn-primary btn-lg">
     <i class="fa-solid fa-id-card"></i> Open Full Result Card
   </a>
 </div>
+<?php endif; ?>

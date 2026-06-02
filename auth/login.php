@@ -116,16 +116,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </button>
     </form>
 
-    <div class="auth-divider">Default Credentials</div>
-
-    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:12px 16px;display:flex;justify-content:space-between;font-size:.8rem;">
-      <div><span style="color:var(--text-secondary);">Username:</span> <strong>admin</strong></div>
-      <div><span style="color:var(--text-secondary);">Password:</span> <strong>admin123</strong></div>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="../student/login.php" style="font-size:.875rem;font-weight:600;color:var(--primary);">
+        <i class="fa-solid fa-graduation-cap" style="margin-right:6px;"></i> Are you a Student? Login here.
+      </a>
     </div>
-
-    <p class="text-center text-sm mt-20" style="color:var(--text-tertiary);">
-      ResultPro v1.0.0 &mdash; PHP Full Stack Internship Assessment
-    </p>
   </div>
 </div>
 

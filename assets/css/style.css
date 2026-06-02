@@ -807,10 +807,17 @@ textarea.form-control { resize: vertical; min-height: 90px; }
    PRINT STYLES
    ===================================================== */
 @media print {
+  @page { margin: 0.5in; }
   .sidebar, .topbar, .no-print, .btn, .topbar-btn { display: none !important; }
   .main-content { margin-left: 0 !important; }
   .page-content { padding: 0 !important; }
-  .result-card  { box-shadow: none !important; border: none !important; }
+  .result-card  { 
+    box-shadow: none !important; 
+    border: none !important; 
+    margin: 0 !important; 
+    page-break-inside: avoid; 
+    break-inside: avoid; 
+  }
   body { background: #fff; }
 
   .result-card-header { background: #1D1D1F !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
