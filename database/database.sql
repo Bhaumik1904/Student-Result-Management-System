@@ -9,9 +9,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 SET FOREIGN_KEY_CHECKS = 0;
 
--- Create and use database
-CREATE DATABASE IF NOT EXISTS `student_result_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `student_result_db`;
+-- Create and use database (Commented out for shared hosting compatibility)
+-- CREATE DATABASE IF NOT EXISTS `student_result_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- USE `student_result_db`;
 
 -- =====================================================
 -- TABLE: admins
