@@ -179,12 +179,16 @@ require_once '../includes/header.php';
 </div>
 
 <script>
-initDashboardCharts(
-  <?= (int)$stats['pass_students'] ?>,
-  <?= (int)$stats['fail_students'] ?>,
-  <?= json_encode($deptLabels) ?>,
-  <?= json_encode(array_map('intval', $deptData)) ?>
-);
+document.addEventListener("DOMContentLoaded", function() {
+  if (typeof initDashboardCharts === 'function') {
+    initDashboardCharts(
+      <?= (int)$stats['pass_students'] ?>,
+      <?= (int)$stats['fail_students'] ?>,
+      <?= json_encode($deptLabels) ?>,
+      <?= json_encode(array_map('intval', $deptData)) ?>
+    );
+  }
+});
 </script>
 
 <?php require_once '../includes/footer.php'; ?>
