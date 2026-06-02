@@ -47,14 +47,14 @@ CREATE TABLE `students` (
 
 -- Sample students
 INSERT INTO `students` (`roll_number`, `student_name`, `mobile`, `email`, `department`) VALUES
-('CSE2024001', 'Arjun Sharma', '9876543210', 'arjun.sharma@example.com', 'CSE'),
-('CSE2024002', 'Priya Patel', '9876543211', 'priya.patel@example.com', 'CSE'),
-('ECE2024001', 'Rahul Singh', '9876543212', 'rahul.singh@example.com', 'ECE'),
-('ECE2024002', 'Sneha Gupta', '9876543213', 'sneha.gupta@example.com', 'ECE'),
-('EEE2024001', 'Vikram Rao', '9876543214', 'vikram.rao@example.com', 'EEE'),
-('CIV2024001', 'Anjali Mehta', '9876543215', 'anjali.mehta@example.com', 'Civil'),
-('MEC2024001', 'Karthik Nair', '9876543216', 'karthik.nair@example.com', 'Mechanical'),
-('CSE2024003', 'Deepika Verma', '9876543217', 'deepika.verma@example.com', 'CSE');
+('CSE2024001', 'Bhaumik Hinunia', '9876543210', 'bhaumik.hinunia@example.com', 'CSE'),
+('CSE2024002', 'Manya Srivastava', '9876543211', 'manya.srivastava@example.com', 'CSE'),
+('ECE2024001', 'Harsh Dathik', '9876543212', 'harsh.dathik@example.com', 'ECE'),
+('ECE2024002', 'Divya Kukadkar', '9876543213', 'divya.kukadkar@example.com', 'ECE'),
+('EEE2024001', 'Tanuj Chaudhary', '9876543214', 'tanuj.chaudhary@example.com', 'EEE'),
+('CIV2024001', 'Vaidehi Khaturia', '9876543215', 'vaidehi.khaturia@example.com', 'Civil'),
+('MEC2024001', 'Aryanish Singh Rathore', '9876543216', 'aryanish.singh@example.com', 'Mechanical'),
+('CSE2024003', 'Subhanshu Singh', '9876543217', 'subhanshu.singh@example.com', 'CSE');
 
 -- =====================================================
 -- TABLE: subjects
