@@ -84,7 +84,7 @@ require_once '../includes/header.php';
 </div>
 
 <!-- Result Output -->
-<div id="result-output" style="max-width:820px;margin:0 auto;"></div>
+<div id="result-output" class="result-card-wrap" style="max-width:900px;margin:0 auto;overflow-x:auto;"></div>
 
 <script>
 $(function() {
