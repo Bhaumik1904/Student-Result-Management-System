@@ -1,0 +1,29 @@
+# Student Result Management System
+# GitHub: https://github.com/Bhaumik1904/Student-Result-Management-System
+
+# Environment & Config
+config/db.php
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# PHP
+*.log
+error_log
+
+# Temp / Cache
+/tmp/
+/cache/
+
+# Node (not used but just in case)
+node_modules/
+package-lock.json
